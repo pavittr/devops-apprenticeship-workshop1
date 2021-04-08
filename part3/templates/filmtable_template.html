@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <title>All Films</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>Film</th>
+                <th>Stars</th>
+            </tr>
+            {% for film in films %}
+            <tr>
+                <td>{{ film.title }}</td>
+                <td>{{ film.rating }}</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+    </body>
+</html>
