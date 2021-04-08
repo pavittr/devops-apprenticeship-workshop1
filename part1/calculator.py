@@ -1,3 +1,5 @@
+import math
+
 def calc(operation, op1, op2):
     if operation == "x":
         return op1 * op2
@@ -7,6 +9,8 @@ def calc(operation, op1, op2):
         return op1 - op2
     elif operation == "+":
         return op1 + op2
+    elif operation == "^":
+        return int(math.pow(op1,op2))
     
     
     raise Exception(f"Unknown operation '{operation}'")
